@@ -1,0 +1,258 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #B22222;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: green;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.btn {
+    background-color: #B22222;
+    border-radius: 4px;
+    padding: 20px 48px;
+    color: #ffffff;
+    font: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* slider */
+.container {
+                margin: 0 auto;
+                margin-top: 20px;
+                position: relative;
+                width: 70%;
+                height: 0;
+                padding-bottom: 40%;
+                background: #4c4c4c;
+                border: solid 10px #2c2c2c;
+}
+
+.slide_img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+}
+
+.slide_img img {
+                width: 100%;
+                height: 100%;
+}
+
+#i1, #i2, #i3, #i4 {
+                display: none;
+}
+
+.pre .nxt {
+                width: 12%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                background: rgba(88,88,88,.4);
+                z-index: 99;
+                cursor: pointer;
+}
+
+.pre {
+                left: 0;
+}
+
+.nxt {
+                right: 0;
+}
+
+.nav {
+                width: 100%;
+                height: 11px;
+                bottom: 12%;
+                position: absolute;
+                text-align: center;
+                z-index: 99;
+}
+
+.dots {
+                top: -5px;
+                width: 18px;
+                height: 18px;
+                margin: 0 4px;
+                position: relative;
+                border-radius: 50%;
+                display: inline-block;
+                background-color: white;
+}
+
+.slide_img {
+                z-index: -1%;
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four {
+                z-index: 9;
+}
+
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3,
+#i4:checked ~ .nav #dot4 {
+                background: #B22222;
+}
+
+/* tekst over image */
+.text1 {
+                font-size: 20px;
+                color: white;
+                width: 400px;
+                position: absolute;
+                top: 10px;
+                right: 20px;
+
+}
+
+.text2 {
+                font-size: 24px;
+                color: white;
+                width: 400px;
+                position: absolute;
+                top: 10px;
+                right: 20px;
+}
+
+.text3 {
+                font-size: 24px;
+                color: white;
+                width: 400px;
+                position: absolute;
+                top: 10px;
+                right: 20px;
+}
+
+.text4 {
+                font-size: 24px;
+                color: white;
+                width: 400px;
+                position: absolute;
+                top: 10px;
+                right: 20px;
+}
+/* image over image */
+.img1 {
+                position: absolute;
+                top: 20px;
+                left: 5px;
+}
+
+.img2 {
+                position: absolute;
+                top: 8px;
+                left: 100px;
+                width: 500px;
+                height: 500px;
+}
+
+.img3 {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.img4 {
+                position: absolute;
+                top: 8px;
+                left: 5px;
+}
+
+
+
+.btnk {
+    background-color: #B22222;
+    border-radius: 4px;
+    padding: 20px 48px;
+    color: #ffffff;
+    font: 20px 'Neuton', serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 250%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}

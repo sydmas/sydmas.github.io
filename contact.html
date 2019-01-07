@@ -1,39 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-	<meta charset="utf-8">
-	<title>Contact</title>
-	<link rel="stylesheet" type="text/css" href="contact.css">
-	<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
-	<link rel="icon" href="logo.png" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" type="text/css" href="contact.css">
+  <link rel="icon" href="logo.png" type="image/gif" sizes="16x16">
+  <title>personages</title>
+</head>
 <body>
-	<header>
-		<div class="nav-bar">
-			<img src="logo.png" class="logo">
+  <ul>
+    <li><a href="home.html"><img src="barlogo.png" height="20px" width="150px"></a></li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Spellen</a>
+    <div class="dropdown-content">
+      <a href="collection.html">Uncharted The Nathan Drake Collection</a>
+      <a href="spellen.html">Uncharted 4</a>
+      <a href="thelost.html">Uncharted The Lost Legacy</a>
+    </div>
+  </li>
+    <li><a href="personage.html">Personages</a></li>
+    <li style="float: right"><a href="contact.html" class="active">Contact</a></li>
+  </ul>
 
-		<ul class="menu">
-			<li><a href="home.html">Home</a></li>
-			<li><a href="over.html">Over mij</a></li>
-			<li><a href="diensten.html">Diensten</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</div>
+  <h1>Vragen?<br></br>Neem contact op!</h1>
+  <iframe src="http:/www.formulier.epizy.com" frameborder="0">Contact</iframe>
 
-	<div class="container">
-  <form action="mailto:mason_kleist@hotmail.com" method="post" enctype="text/plain">
-    <label for="vnaam">Voornaam</label>
-    <input type="text" id="vnaam" name="firstname" placeholder="Uw voornaam...">
 
-    <label for="anaam">Achternaam</label>
-    <input type="text" id="anaam" name="lastname" placeholder="Uw achternaam...">
 
-    <label for="subject">Bericht</label>
-    <textarea id="subject" name="subject" placeholder="Uw bericht..." style="height:200px"></textarea>
-
-    <input type="submit" value="Verzenden">
-  </form>
-</div>
-	</header>
 </body>
 </html>
